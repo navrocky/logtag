@@ -3,6 +3,10 @@
   "displayName": "LogTag",
   "description": "Generate unique tag for log",
   "publisher": "redfalk0n",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redfalk0n/logtag.git"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
