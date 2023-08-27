@@ -22,8 +22,13 @@ jobs:
         with:
           node-version: 18.x
 
-      - run: yarn
+      - name: Installing deps
+        run: yarn
 
-      - run: yarn run lint
+      - name: Linting
+        run: yarn run lint
 
-      #- run: yarn run test
+      - name: Run headless test
+        uses: coactions/setup-xvfb@v1
+        with:
+          run: yarn run test
